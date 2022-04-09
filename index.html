@@ -410,13 +410,61 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal-window">
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-button-icon">
             <use href="./images/icons/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form>
+          <label for="name" class="field-name">Имя</label>
+          <div class="modal-inner">
+            <input type="text" id="name" name="name" class="modal-field" />
+            <svg class="modal-field-icon">
+              <use href="./images/icons/sprite.svg#modal-icon-person"></use>
+            </svg>
+          </div>
+
+          <label for="tel" class="field-name">Телефон</label>
+          <div class="modal-inner">
+            <input type="tel" id="tel" name="phone" class="modal-field" />
+            <svg class="modal-field-icon">
+              <use href="./images/icons/sprite.svg#modal-phone"></use>
+            </svg>
+          </div>
+
+          <label for="email" class="field-name">Почта</label>
+          <div class="modal-inner">
+            <input type="email" id="email" name="email" class="modal-field" />
+            <svg class="modal-field-icon">
+              <use href="./images/icons/sprite.svg#modal-email"></use>
+            </svg>
+          </div>
+
+          <label for="feedback" class="field-name">Комментарий</label>
+          <textarea
+            name="feedback"
+            id="feedback"
+            placeholder="Введите текст"
+            class="modal-field feedback-field"
+          ></textarea>
+
+          <input
+            type="checkbox"
+            name="agreement"
+            value="policy-agreement"
+            id="agreement"
+            required
+          />
+          <label for="agreement" class="agreement-field-name">
+            Соглашаюсь с рассылкой и принимаю&#32;<a href="" class="agreement">Условия договора</a>
+          </label>
+
+          <button type="submit" class="submit-button">Отправить</button>
+        </form>
       </div>
     </div>
 
