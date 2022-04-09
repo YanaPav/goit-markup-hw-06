@@ -613,6 +613,25 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.custom-checkbox {
+  display: inline-block;
+  margin: 0 4px 0 12px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.custom-checkbox-icon {
+  width: 11px;
+  height: 8px;
+}
+
+.agreement-checkbox:checked + .custom-checkbox {
+  background-color: var(--accent-color);
+  border: none;
+}
+
 .agreement-field-name {
   display: inline-block;
   font-weight: 400;

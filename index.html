@@ -452,14 +452,19 @@
             class="modal-field feedback-field"
           ></textarea>
 
-          <input
-            type="checkbox"
-            name="policy-agreement"
-            value="policy-agreement"
-            id="agreement"
-            required
-          />
-          <label for="agreement" class="agreement-field-name">
+          <label class="agreement-field-name">
+            <input
+              type="checkbox"
+              name="policy-agreement"
+              value="policy-agreement"
+              class="agreement-checkbox visually-hidden"
+              required
+            />
+            <span class="custom-checkbox">
+              <svg class="custom-checkbox-icon">
+                <use href="./images/icons/sprite.svg#policy-agreement"></use>
+              </svg>
+            </span>
             Соглашаюсь с рассылкой и принимаю&#32;<a href="" class="agreement">Условия договора</a>
           </label>
 
