@@ -572,6 +572,15 @@ body {
   padding: 11px 0 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color:#000000;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-field:focus {
+  border-color: var(--accent-color);
   outline: none;
 }
 
@@ -582,6 +591,11 @@ body {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-field:focus + .modal-field-icon {
+  fill: var(--accent-color);
 }
 
 .feedback-field {
