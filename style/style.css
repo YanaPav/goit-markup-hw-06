@@ -577,6 +577,7 @@ body {
   line-height: 14px;
   color:#000000;
   transition: border-color var(--transition-duration) var(--transition-timing-function);
+  cursor: pointer;
 }
 
 .modal-field:focus {
@@ -614,12 +615,15 @@ body {
 }
 
 .custom-checkbox {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items:center;
   margin: 0 4px 0 12px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+  transition: background-color var(--transition-duration) var(--transition-timing-function), border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .custom-checkbox-icon {
@@ -629,7 +633,7 @@ body {
 
 .agreement-checkbox:checked + .custom-checkbox {
   background-color: var(--accent-color);
-  border: none;
+  border-color: var(--accent-color);
 }
 
 .agreement-field-name {
@@ -640,6 +644,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 28px;
+  cursor: pointer;
 }
 
 .agreement {
