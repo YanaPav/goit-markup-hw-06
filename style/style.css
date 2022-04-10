@@ -615,10 +615,10 @@ body {
 }
 
 .custom-checkbox {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items:center;
-  margin: 0 4px 0 12px;
+  margin: 0 7px 0 12px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -637,13 +637,14 @@ body {
 }
 
 .agreement-field-name {
-  display: inline-block;
+  display: flex;
+  align-items:center;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
